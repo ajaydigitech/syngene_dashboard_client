@@ -1,0 +1,136 @@
+.fixed-sidebar {
+    position: fixed;
+    top: 80px; /* Adjust top position based on header height */
+    left: 0;
+    width: 18rem;
+    /* height: calc(100% - 80px); Adjust height based on header height */
+    background-color: #003580;
+    /* background-color: black; */
+    overflow-y: auto;
+    color: white;
+    /* display: none; */
+    height: 100vh;
+    /* border: 10px solid #000; */
+  }
+  
+ 
+.sidebar-ul{
+    list-style-type: none;
+    /* border: 1px solid #000; */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+  }
+  .sidebar-li{
+    font-size: 1.5rem;
+    width: 98%;
+    /* border: 1px solid #000; */
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    cursor: pointer;
+  
+  }
+  .sidebar-li:hover{
+    background-color: white ;
+    color: rgb(19, 166, 224);
+    cursor: pointer;
+  }
+  .sidebar-links{
+    color: white;
+    text-decoration: none;
+  }
+  /* .sidebar-li:active{
+    background-color: #7559FF;
+    color: white;
+  }
+  .sidebar-li:visited{
+    background-color: red ;
+    color: #7559FF;
+    cursor: pointer;
+  } */
+  .icons-sidebar{
+    margin-right: 0.8rem;
+  }
+  .dropdown-arrow{
+    float: right;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+  }
+  .dropdown-menu{
+    list-style-type: none;
+  }
+
+.sidebar-dots-li{
+  display: none;
+  font-size: 5rem;
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .fixed-sidebar {
+    position: fixed;
+    top: 80px; /* Adjust top position based on header height */
+    left: 0;
+    width: 15rem;
+    height: calc(100% - 80px); 
+    background-color: #003580;
+    /* background-color: black; */
+    overflow-y: auto;
+    color: white;
+  }
+  
+ 
+.sidebar-ul{
+    list-style-type: none;
+    /* border: 1px solid #000; */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+  }
+  .sidebar-li{
+    font-size: 1.2rem;
+    width: 98%;
+    /* border: 1px solid #000; */
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    cursor: pointer;
+  
+  }
+  .sidebar-li:hover{
+    background-color: white ;
+    color: rgb(19, 166, 224);
+    cursor: pointer;
+  }
+  .sidebar-links{
+    color: white;
+    text-decoration: none;
+  }
+  /* .sidebar-li:active{
+    background-color: #7559FF;
+    color: white;
+  }
+  .sidebar-li:visited{
+    background-color: red ;
+    color: #7559FF;
+    cursor: pointer;
+  } */
+  .icons-sidebar{
+    margin-right: 0.8rem;
+  }
+  .dropdown-arrow{
+    float: right;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+  }
+  .dropdown-menu{
+    list-style-type: none;
+  }
+
+.sidebar-dots-li{
+  display: none;
+  font-size: 5rem;
+}}
+

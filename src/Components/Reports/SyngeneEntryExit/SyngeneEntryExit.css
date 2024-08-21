@@ -1,0 +1,1282 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.pagination a {
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  float: left;
+  padding: 15px 22px;
+  text-decoration: none;
+}
+
+.pagination button {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+ font-size: 23px !important;
+  padding: 10px 12px;
+  margin: 0 2px;
+  cursor: pointer;
+  width:70px ;
+}
+.pagination button.active {
+  color:#fff;
+  font-weight:600 ;
+  background-color:#003580;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+.syngene-entry-exit{
+    width: 100%;
+    /* border: 10px solid #000; */
+    height: auto;
+}
+.syngene-entry-exit-heading-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003580;
+    width: calc(100% - 18rem);
+    height: 3.5rem;
+    position: fixed;
+    z-index: 100;
+    top: 80px;
+}
+.syngene-entry-exit-heading-div-i1{
+  margin-left: 1rem;
+}
+.syngene-entry-exit-heading-div-i2{
+  /* margin-left: 1rem; */
+}
+.syngene-entry-exit-heading{
+    color: white;
+    font-size: 1.5rem;
+}
+.searchbar-div{
+    width: 100%;
+    height: 5rem;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7rem;
+  }
+  .searchbar-div-inner{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .searchbar-div-inner-1{
+    width: 80%;
+    height: 3rem;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+  .s-date-input{
+    font-size: 1.2rem;
+  }
+  .e-date-input{
+    font-size: 1.2rem;
+  }
+  .search-input{
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 8px 2px #003580;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .search-input:focus{
+    border: none;
+  
+  }
+.entry-exit-table-div-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+.td-start{
+  text-align: start;
+  padding-left: 10px;
+}
+  /* .entry-exit-table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .entry-exit-table-div-inner{
+    box-shadow: 2px 2px 8px 2px #003580;;
+    width: 95%;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    
+  }
+  .entry-exit-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+  
+  border-collapse: collapse;
+    border-radius: 1rem;
+  
+  } */
+  .tr-border{
+    border-top: 1px solid #003580;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0.8;
+    /* border-radius: 0.5rem; */
+   
+    
+  }
+  .tr-th{
+  
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    height: auto;
+    opacity: 0.8;
+  }
+  /*
+  .details-links{
+    text-decoration: none;
+    color: rgb(22, 124, 164);
+    text-align: center;
+  } */
+  .link{
+    color: rgb(22, 124, 164);
+    cursor: pointer;
+  }
+  .page-links{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+  }
+  .entry-exit-table-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+.entry-exit-table-div-inner{
+    box-shadow: 2px 2px 8px 2px #003580;;
+    width: 95%;
+    /* padding: 2rem; */
+    border-radius: 0.5rem;
+    
+  }
+  .entry-exit-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+  
+  }
+ .tr-th,.tr-td{
+  border: 2px solid #003580;
+  word-wrap: break-word;
+  max-width: 100px;
+ }
+ .u-th{
+  word-wrap: break-word;
+  max-width: 100px;
+  font-size: 1.9rem;
+ }
+ .searchbar-div-inner2{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    z-index: 10;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .fa-download-icon{
+  /* position: fixed;
+  z-index: 10; */
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  /* bottom: 1rem;
+  right: 3rem; */
+
+ }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .syngene-entry-exit-heading-div{
+      width: calc(100% - 18rem);
+    }
+    .syngene-entry-exit-heading{
+      font-size: 1.5rem;
+  }
+  .syngene-entry-exit-heading-back-arrow{
+    font-size: 3rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: 4rem;
+    margin-top: 7rem;
+  }
+  .searchbar-div-inner{
+    width: 50%;
+    height: 3rem;
+  }
+  .searchbar-div-inner-1{
+    width: 80%;
+    height: 3rem;  
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+  }
+  .s-date-input{
+    font-size: 1.1rem;
+  }
+  .e-date-input{
+    font-size: 1.1rem;
+  }
+  .search-input{
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    }
+    .entry-exit-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .entry-exit-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 95%;
+      /* padding: 2rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .entry-exit-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+      /* border-radius: 2rem; */
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: auto;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      /* height: 2rem; */
+      
+      opacity: 0.8;
+    }
+.u-th{
+  font-size: 1.5rem;
+}
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .syngene-entry-exit-heading-div{
+      width: calc(100% - 18rem);
+      height: 5rem;
+    }
+    .syngene-entry-exit-heading{
+      font-size: 1.5rem;
+  }
+  .syngene-entry-exit-heading-back-arrow{
+    font-size: 2.5rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .searchbar-div-inner{
+    width: 100%;
+    height: 3rem;
+  }
+  .searchbar-div-inner-1{
+    width: 100%;
+    height: 3rem;  
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
+ .e-date-input{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+ }
+ .s-date-input{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+ }
+
+  .search-input{
+    width: 80%;
+    height: 3rem;
+    font-size: 1.5rem;
+    }
+    
+    .entry-exit-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .entry-exit-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 95%;
+      /* padding: 2rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .entry-exit-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+      border-radius: 0.5rem;
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: auto;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      height: auto;
+      
+      opacity: 0.8;
+    }
+    .u-th{
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .searchbar-div-inner2{
+      width:3.4rem;
+      height: 3.4rem;
+    }
+    .fa-download-icon{
+      font-size: 2rem;
+    }
+    .syngene-entry-exit-heading-div{
+      width: calc(100% - 15rem);
+      height: 5rem;
+    }
+    .syngene-entry-exit-heading{
+      font-size:1rem;
+  }
+  .syngene-entry-exit-heading-back-arrow{
+    font-size: 2rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: 3rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .searchbar-div-inner{
+    width: 100%;
+    height: 2rem;
+  }
+  .searchbar-div-inner-1{
+    width: 100%;
+    height: 3rem;  
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
+ .e-date-input{
+  margin-left: 1rem;
+  font-size: 1.1rem;
+ }
+ .s-date-input{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+ }
+  .search-input{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    }
+    .entry-exit-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .entry-exit-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 90%;
+      /* padding: 1.5rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .entry-exit-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+      border-radius: 0.5rem;
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      height: auto;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      height: auto;
+      opacity: 0.8;
+    } 
+    .tr-th,.tr-td{
+      word-wrap: break-word;
+      max-width: 100px;
+     }
+     .u-th{
+      word-wrap: break-word;
+      max-width: 100px;
+      font-size: 1.2rem;
+     }
+  }
+  
+@media only screen and (min-width: 600px) and (max-width: 767px){
+  .searchbar-div-inner2{
+    width:3.4rem;
+    height: 3.4rem;
+  }
+  .fa-download-icon{
+    font-size: 2rem;
+  }
+  .syngene-entry-exit-heading-div{
+    width: calc(100% - 4rem);
+    height: 5rem;
+  }
+  .syngene-entry-exit-heading{
+    font-size: 2rem;
+}
+.syngene-entry-exit-heading-back-arrow{
+  font-size: 2rem;
+}
+.searchbar-div{
+  width: 100%;
+height: 2rem;
+margin-top: 10rem;
+flex-wrap: wrap;
+/* margin-bottom: 2rem; */
+}
+.searchbar-div-inner{
+  width: 100%;
+  height: 1.8rem;
+}
+.searchbar-div-inner-1{
+  width: 100%;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+.e-date-input{
+margin-left: 0.7rem;
+font-size: 1.1rem;
+}
+.s-date-input{
+margin-left: 0.7rem;
+margin-right: 0.7rem;
+font-size: 1.1rem;
+}
+.search-input{
+  width: 80%;
+  height: 1.8rem;
+  font-size: 0.2rem;
+  }
+  .entry-exit-table-div{
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .entry-exit-table-div-inner{
+    /* border: 5px solid green; */
+    box-shadow: 2px 2px 8px 2px #003580;;
+    width: 90%;
+    /* padding: 1.5rem; */
+    border-radius: 0.5rem;
+    
+  }
+  .entry-exit-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+  
+  border-collapse: collapse;
+    border-radius: 0.5rem;
+  
+  }
+  .tr-border{
+    /* border: 1px solid gainsboro; */
+    border-top: 1px solid #003580;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: auto;
+    opacity: 0.8;
+    
+  }
+  .tr-th{
+  
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: auto;
+    opacity: 0.8;
+  }
+  .u-th{
+    font-size: 1.2rem;
+  }
+  .tr-th,.tr-td{
+    word-wrap: break-word;
+    max-width: 60px;
+   }
+   .u-th{
+    word-wrap: break-word;
+    max-width: 60px;
+    font-size: 1.2rem;
+   }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .searchbar-div-inner2{
+      width:3rem;
+      height: 3rem;
+    }
+    .fa-download-icon{
+      font-size: 1.8rem;
+    }
+    .syngene-entry-exit-heading-div{
+      width: calc(100% - 4rem);
+      height: 4rem;
+  }
+    .syngene-entry-exit-heading{
+      font-size: 1.2rem;
+  }
+  .syngene-entry-exit-heading-back-arrow{
+    font-size: 1.2rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: 2rem;
+    margin-top: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .searchbar-div-inner{
+    width: 100%;
+    height: 1.8rem;
+  }
+  .searchbar-div-inner-1{
+    width: 100%;
+    height: 1.8rem;;  
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .e-date-input{
+  margin-left: 0;
+  font-size: 1rem;
+  }
+  .s-date-input{
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1rem;
+  }
+  .search-input{
+    width: 80%;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    }
+    .entry-exit-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .entry-exit-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 95%;
+      /* padding: 0.5rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .entry-exit-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+      border-radius: 0.5rem;
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 0.5rem;
+      font-weight: 400;
+      height: auto;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      height: 2.5rem;
+      opacity: 0.8;
+    }
+    .u-th{
+      font-size: 1rem;
+    }
+    .tr-th,.tr-td{
+      word-wrap: break-word;
+      max-width: 50px;
+      /* border: 1px solid #000; */
+     }
+     .u-th{
+      word-wrap: break-word;
+      max-width: 50px;
+      font-size: 0.9rem;
+      /* border: 1px solid #000; */
+     }
+     .tr-td{
+      font-size: 0.8rem;
+     }
+  }
+
+
+  .user-details{
+    width: 100%;
+    /* border: 10px solid #000; */
+    height: auto;
+}
+.user-details-heading-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003580;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+.page-links{
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+.user-details-heading{
+    color: white;
+    font-size: 4rem;
+
+}
+.searchbar-div{
+    width: 100%;
+    height: 5rem;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchbar-div-inner{
+    width: 80%;
+    /* border: 1px solid #000; */
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .search-input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 8px 2px #003580;
+    text-align: center;
+    /* padding-left: 2rem; */
+    font-size: 2rem;
+  }
+  .search-input:focus{
+    border: none;
+  
+  }
+
+  .user-details-table-div{
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .user-details-table-div-inner{
+    /* border: 5px solid green; */
+    box-shadow:   2px 2px 8px 2px #003580;;
+    width: 95%;
+    /* padding: 3rem; */
+    border-radius: 0.5rem;
+    
+  }
+  .user-details-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+  
+  border-collapse: collapse;
+    border-radius: 0.5rem;
+  
+  }
+  .tr-border{
+    /* border: 1px solid gainsboro; */
+    border-top: 1px solid #003580;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 4.5rem;
+    opacity: 0.8;
+    /* color: gainsboro; */
+    
+  }
+  .tr-th{
+  
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    height: 4.5rem;
+    opacity: 0.8;
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .user-details-heading{
+      font-size: 3rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: 4rem;
+  }
+  .searchbar-div-inner{
+    width: 80%;
+    height: 3rem;
+  }
+  .search-input{
+    width: 80%;
+    height: 3rem;
+    font-size: 1.5rem;
+    }
+    .user-details-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .user-details-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 95%;
+      /* padding: 3rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .user-details-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+      border-radius: 0.5rem;
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: 4rem;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      height: 4rem;
+      
+      opacity: 0.8;
+    }
+  }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .user-details-heading{
+    font-size: 2.5rem;
+}
+.searchbar-div{
+  width: 100%;
+  height: 4rem;
+}
+.searchbar-div-inner{
+  width: 100%;
+  height: 3rem;
+}
+.search-input{
+  width: 80%;
+  height: 3rem;
+  font-size: 1.5rem;
+  }
+  .user-details-table-div{
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .user-details-table-div-inner{
+    /* border: 5px solid green; */
+    box-shadow: 2px 2px 8px 2px #003580;;
+    width: 95%;
+    /* padding: 3rem; */
+    border-radius: 0.5rem;
+    
+  }
+  .user-details-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+  
+  border-collapse: collapse;
+    border-radius: 0.5rem;
+  
+  }
+  .tr-border{
+    /* border: 1px solid gainsboro; */
+    border-top: 1px solid #003580;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 4rem;
+    opacity: 0.8;
+    
+  }
+  .tr-th{
+  
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    height: 4rem;
+    
+    opacity: 0.8;
+  }
+
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .user-details-heading{
+      font-size: 2rem;
+  }
+  .searchbar-div{
+    width: 100%;
+    height: 3rem;
+  }
+  .searchbar-div-inner{
+    width: 100%;
+    height: 2rem;
+  }
+  .search-input{
+    width: 80%;
+    height: 2rem;
+    font-size: 1.2rem;
+    }
+    .user-details-table-div{
+      /* border: 10px solid red; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      
+    }
+    .user-details-table-div-inner{
+      /* border: 5px solid green; */
+      box-shadow: 2px 2px 8px 2px #003580;;
+      width: 95%;
+      /* padding: 1.5rem; */
+      border-radius: 0.5rem;
+      
+    }
+    .user-details-table{
+    width: 100%;
+    box-shadow:  2px 2px 8px 2px #003580;
+    
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    
+    }
+    .tr-border{
+      /* border: 1px solid gainsboro; */
+      border-top: 1px solid #003580;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      height: 3rem;
+      opacity: 0.8;
+      
+    }
+    .tr-th{
+    
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      height: 3rem;
+      
+      opacity: 0.8;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 767px){
+    .user-details-heading-div{
+   margin-top: 4.5rem;
+  } 
+  .user-details-heading{
+    font-size: 1.2rem;
+}
+/* .searchbar-div{
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 2rem;
+} */
+.searchbar-div-inner{
+  width: 80%;
+  height: 1.5rem;
+}
+.search-input{
+  width: 80%;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  }
+  .user-details-table-div{
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    
+  }
+  .user-details-table-div-inner{
+    /* border: 5px solid green; */
+    box-shadow: 2px 2px 8px 2px #003580;;
+    width: 95%;
+    /* padding: 1.5rem; */
+    border-radius: 0.5rem;
+    
+  }
+  .user-details-table{
+  width: 100%;
+  box-shadow:  2px 2px 8px 2px #003580;
+  
+  border-collapse: collapse;
+    border-radius: 0.5rem;
+  
+  }
+  .tr-border{
+    /* border: 1px solid gainsboro; */
+    border-top: 1px solid #003580;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 3rem;
+    opacity: 0.8;
+    
+  }
+  .tr-th{
+  
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 3rem;
+    
+    opacity: 0.8;
+  }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .user-details-heading-div{
+      margin-top: 4.4rem;
+     } 
+     .user-details-heading{
+       font-size: 1.2rem;
+   }
+   /* .searchbar-div{
+     margin-top: 0.5rem;
+     width: 100%;
+     height: 2rem;
+   } */
+   .searchbar-div-inner{
+     width: 80%;
+     height: 1.5rem;
+   }
+   .search-input{
+     width: 80%;
+     height: 1.5rem;
+     font-size: 1.2rem;
+     }
+     .user-details-table-div{
+       /* border: 10px solid red; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       width: 100%;
+       height: auto;
+       
+     }
+     .user-details-table-div-inner{
+       /* border: 5px solid green; */
+       box-shadow: 2px 2px 8px 2px #003580;;
+       width: 95%;
+       /* padding: 1.5rem; */
+       border-radius: 0.5rem;
+       
+     }
+     .user-details-table{
+     width: 100%;
+     box-shadow:  2px 2px 8px 2px #003580;
+     
+     border-collapse: collapse;
+       border-radius: 0.5rem;
+     
+     }
+     .tr-border{
+       /* border: 1px solid gainsboro; */
+       border-top: 1px solid #003580;
+       text-align: center;
+       font-size: 1rem;
+       font-weight: 400;
+       height: 2rem;
+       opacity: 0.8;
+       
+     }
+     .tr-th{
+     
+       text-align: center;
+       font-size: 1rem;
+       font-weight: 400;
+       height: 2.5rem;
+       
+       opacity: 0.8;
+       /* background-color: black; */
+     }
+  }
+  .no-data-message{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 400px) and (max-width: 510px) {
+    .searchbar-div{
+      width: 100%;
+      height: 2rem;
+      margin-top: 9rem;
+      margin-bottom: 7rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .searchbar-div-inner{
+      width: 100%;
+      height: 1.8rem;
+    }
+    .searchbar-div-inner-1{
+      width: 100%;
+      height: auto;  
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .e-date-input{
+    font-size: 1rem;
+    width: 100%;
+    }
+    .s-date-input{
+    font-size: 1rem;
+    width: 100%;
+    }
+    .search-input{
+      width: 80%;
+      height: 1.8rem;
+      font-size: 1.2rem;
+      }
+     
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 400px) {
+    .searchbar-div{
+      width: 100%;
+      height: auto;
+      margin-top: 9rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .searchbar-div-inner{
+      width: 100%;
+      height: 1.5rem;
+    }
+    .searchbar-div-inner-1{
+      width: 100%;
+      height: 1.5rem;;  
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      /* margin-left: 2rem; */
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+    .e-date-input{
+      width: 100%;
+    margin-left: 0rem;
+    }
+    .s-date-input{
+      width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    } 
+  }

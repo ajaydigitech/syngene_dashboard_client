@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-div{
+    width: 100%;
+    height: 100vh;
+}
+.welcome-admin-div{
+    width: calc(100% - 18rem);
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003580;
+    color: #1a86b0;
+
+    position: fixed;
+    z-index: 100;
+    top: 80px;
+
+}
+.welcome-admin-h1{
+    color: white;
+    font-size: 1.5rem;
+
+}
+.dashboard-chart-div{
+    width: 100%;
+    height: calc(100vh - 7rem);
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 7rem; */
+    margin-bottom: 4rem;
+}
+.dashboard-piechart-div{
+    /* border: 1px solid #000; */
+    border-radius: 1rem;
+    width: auto;
+    /* background-color: whitesmoke;  */
+    /* box-shadow: 0px 8px 20px blue; */
+  
+  }
+  .dashboard-barchart-div{
+    border-radius: 1rem;
+    width: auto;
+    background-color:whitesmoke; 
+    box-shadow: 0px 8px 20px blue;
+  }
+
+::-webkit-scrollbar {
+    width: 0px; 
+  }
+  
+::-webkit-scrollbar-track {
+    background: #003580; 
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #003580; 
+    border-radius: 6px; 
+    overflow: hidden;
+    
+  }
+  
+
+.custom-scrollbar {
+    height: auto; 
+    overflow-y: scroll; 
+
+ }
+ @media only screen and (min-width: 1200px) and (max-width: 1399px){
+  .welcome-admin-h1{
+    color: white;
+    font-size: 3rem;
+}
+.dashboard-chart-div{
+  width: 100%;
+  /* border: 20px solid #000; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7rem;
+}
+.dashboard-piechart-div{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 70%;
+}
+.dashboard-barchart-div{
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+ }
+
+ @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .welcome-admin-h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.dashboard-chart-div{
+  width: 100%;
+  /* border: 2px solid #000; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7rem;
+}
+.dashboard-piechart-div{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 70%;
+}
+.dashboard-barchart-div{
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+ }
+ 
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .welcome-admin-h1{
+    color: white;
+    font-size: 2rem;
+}
+.welcome-admin-div{
+  width: calc(100% - 15rem);
+}
+.dashboard-chart-div{
+  width: 100%;
+  /* border: 2px solid #000; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7rem;
+}
+.dashboard-piechart-div{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 70%;
+}
+.dashboard-barchart-div{
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+}
+ }
+@media only screen and (min-width: 600px) and (max-width: 767px){
+  .dashboard-div{
+  margin-bottom: 0;
+}
+  .welcome-admin-div{
+    width: calc(100% - 4rem);
+
+}
+
+  .welcome-admin-h1{
+    color: white;
+    font-size: 2rem;
+}
+.dashboard-chart-div{
+  width: 100%;
+  /* border: 12px solid red; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 11rem;
+}
+.dashboard-piechart-div{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 80%;
+  /* border: 1px solid #000; */
+}
+.dashboard-barchart-div{
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  width: 90%;
+  /* border: 1px solid #000; */
+} 
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+  .welcome-admin-div{
+    /* border: 1px solid #000; */
+    width: calc(100% - 4rem);
+
+}
+  .welcome-admin-h1{
+    color: white;
+    font-size: 1.8rem;
+}
+.dashboard-chart-div{
+  width: 100%;
+  /* border: 2px solid #000; */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10rem;
+}
+.dashboard-piechart-div{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 94%;
+  /* border: 1px solid #000; */
+}
+.dashboard-barchart-div{
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  width: 95%;
+} 
+}
